@@ -30,10 +30,12 @@
 	"params": {
 			"networkID" : "0xCEA8",
 			"maximumExtraDataSize": "0x20",
-            "minGasLimit": "0x1388",
-            "eip1283DisableTransition": "0x0",
-            "wasmActivationTransition": "0x0",
-            "gasLimitBoundDivisor": "0x400"
+      "minGasLimit": "0x1388",
+      "eip1283DisableTransition": "0x0",
+      "wasmActivationTransition": "0x0",
+      "emptyStepsTransition": "0x0",
+      "maximumEmptySteps": "0x15180",
+      "gasLimitBoundDivisor": "0x400"
 	},
 	"accounts": {
         "0x0000000000000000000000000000000000000001": {
