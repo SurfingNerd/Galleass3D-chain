@@ -31,5 +31,20 @@ reseal_on_txs = "none"
 # Example: engine_signer = "0x8e1ca34f5718996f2531464f1323f959d8a8dd21"
 engine_signer = "0x3f6a957c49d23353d949c342636eb8c54c216a78"
 
+[rpc]
+disable = false
+port = 8545
+interface = "all"
+apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "traces", "rpc"]
+hosts = ["all"]
+
+[websockets]
+disable = false
+port = 8546
+interface = "all"
+origins = ["none"]
+apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "traces", "rpc"]
+hosts = ["none"]
+
 [misc]
 log_file = "parity.log"
