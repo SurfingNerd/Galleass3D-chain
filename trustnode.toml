@@ -1,7 +1,7 @@
 # doc: https://wiki.parity.io/Configuring-Parity-Ethereum.html#config-file
 
 [parity]
-chain = "spec.json"
+chain = "chainspec.json"
 base_path = "data"
 auto_update = "none"
 
