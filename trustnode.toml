@@ -33,18 +33,13 @@ engine_signer = "0x3f6a957c49d23353d949c342636eb8c54c216a78"
 
 [rpc]
 disable = false
-port = 8545
 interface = "all"
-apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "traces", "rpc", "shh", "shh_pubsub"]
-hosts = ["all"]
+apis = ["all"]
 
 [websockets]
 disable = false
-port = 8546
 interface = "all"
-origins = ["none"]
-apis = ["web3", "eth", "pubsub", "net", "parity", "parity_pubsub", "traces", "rpc", "shh", "shh_pubsub"]
-hosts = ["none"]
+apis = ["all"]
 
 [misc]
 log_file = "parity.log"
