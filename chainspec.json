@@ -7,13 +7,14 @@
             "stepDuration": 1,
             "maximumUncleCountTransition": 0,
             "maximumUncleCount": 0,
+            "blockReward": "1000000000",
             "validators": {
                 "list": [
                     "0x04c24be168c335b2d696a0dd37ce94c66372a329"
                   ]
               }
-            },
-            "blockReward": "1"
+            }
+            
         }
     },
 	"genesis": {
