@@ -21,11 +21,11 @@ password = [ "password.txt" ]
 unlock = [ "0x3f6a957c49d23353d949c342636eb8c54c216a78" ]
 
 [mining]
-usd_per_tx = "0"
+#usd_per_tx = "0"
 min_gas_price = 1000000000
-force_sealing = true
-gas_floor_target = "8000000"
-reseal_on_txs = "none"
+#force_sealing = true
+#gas_floor_target = "8000000"
+#reseal_on_txs = "none"
 
 # address of your "mining key"
 # Example: engine_signer = "0x8e1ca34f5718996f2531464f1323f959d8a8dd21"
