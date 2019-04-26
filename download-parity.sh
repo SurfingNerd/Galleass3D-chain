@@ -3,13 +3,10 @@
 set -e
 set -u
 
-VERSION="2.4.5"
 
-BIN_LINUX="https://releases.parity.io/ethereum/v2.4.5/x86_64-unknown-linux-gnu/parity"
-SHA256_LINUX="445370460d4ec4b44542616d89ec822be402e05d4413d9989d12cc6a63a55905"
 
-BIN_DARWIN="https://releases.parity.io/ethereum/v2.4.5/x86_64-apple-darwin/parity"
-SHA256_DARWIN="9449237292d3dd3cbe634c289670467d2b8dbdc2e3f4eeb1f11141399ab1763a"
+BIN_LINUX="https://releases.parity.io/ethereum/v2.3.8/x86_64-unknown-linux-gnu/parity"
+SHA256_LINUX="0a0481437fb810a763dde3fd6f71c1051ebedafceff84b8e7a96279195f3e96a"
 
 # param_1: message to be printed before exiting
 function giving_up {
@@ -54,16 +51,11 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 	curl -f $BIN_LINUX > parity
 	check_integrity $SHA256_LINUX
 	chmod +x parity
-elif [[ "$OSTYPE" == "darwin"* ]]; then
-	echo "This looks like a Mac..."
-	curl -f $BIN_DARWIN > parity
-	# todo: find pre-installed tool for sha256 calc
-#	check_integrity $SHA256_DARWIN
-	chmod +x parity
 else
 	echo "### Sorry, I can't handle this platform: $OSTYPE"
 	giving_up "Please manually download or build a parity binary compatible with your platform."
 fi
 
 echo
-echo "Parity v$VERSION was successfully downloaded and verified!"
+echo "Parity was successfully downloaded and verified!"
+./parity --version
