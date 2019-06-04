@@ -10,6 +10,7 @@ auto_update = "none"
 identity = "prototype93"
 
 [network]
+port = 40303
 allow_ips = "public"
 reserved_peers="bootnodes.txt"
 
@@ -32,6 +33,7 @@ min_gas_price = 1000000000
 engine_signer = "0x3f6a957c49d23353d949c342636eb8c54c216a78"
 
 [rpc]
+port = 18545
 disable = false
 interface = "all"
 apis = ["all"]
