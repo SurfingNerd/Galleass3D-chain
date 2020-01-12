@@ -4,9 +4,8 @@ set -e
 set -u
 
 
-
-BIN_LINUX="https://releases.parity.io/ethereum/v2.3.8/x86_64-unknown-linux-gnu/parity"
-SHA256_LINUX="0a0481437fb810a763dde3fd6f71c1051ebedafceff84b8e7a96279195f3e96a"
+BIN_LINUX="https://releases.parity.io/ethereum/v2.5.13/x86_64-unknown-linux-gnu/parity"
+SHA256_LINUX="e133fb316c7829d9291bb73ceb3053409053d03603565a2b4d2a582c9ad4c84b"
 
 # param_1: message to be printed before exiting
 function giving_up {
