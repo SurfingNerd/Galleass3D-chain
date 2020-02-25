@@ -1,3 +1,3 @@
 #!/bin/sh
 
-./parity -c trustnode.toml
+nice -10 ./parity -c trustnode.toml

@@ -37,13 +37,13 @@ port = 8545
 disable = false
 interface = "all"
 apis = ["all"]
-# cors = ["all"]
+cors = ["all"]
 
 [websockets]
 disable = false
 interface = "all"
 apis = ["all"]
-# cors = ["all"]
+#cors = ["all"]
 
 [misc]
 log_file = "parity.log"
